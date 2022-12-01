@@ -1,0 +1,29 @@
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: FoodPacker;
+    font-size: 60px;
+    color: rgb(201, 89, 10);
+}
+.campos{
+    color: rgb(196, 85, 6);
+    font-size: x-large;
+    text-align: center;
+}
+
+.productos{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fondo{
+    background-color: rgb(240, 217, 186);
+    border-radius: 10px;
+}
+
+.espacios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

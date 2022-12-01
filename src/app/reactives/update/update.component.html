@@ -1,0 +1,101 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark fuente" style="background-color: #cf3721;">
+    <div class="container-fluid">
+         <a class="navbar-brand" href="./reactive/logeado">
+            La Huastequita
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-link" href="./reactive/agregar">Agregar</a> -->
+          <a class="nav-link" href="./reactive/logeado">Lista</a>
+          <a class="nav-link" href="./reactive/eliminado">Eliminados</a>
+          <a class="nav-link" href="./reactive/agregar">Agregar</a>
+          <a class="nav-link" href="./reactive/usuarios">Clientes</a>
+          <a class="nav-link" href="./reactive/lista" (click)="logout()">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+</nav>
+<div class="px-5 mt-5">
+    <div class="col">
+
+
+        <form (ngSubmit)="guardar()" [formGroup]="Formulario">
+            <!-- Campo de Nombre -->
+            <h2>Registro: {{Formulario.value.nombre}} </h2>
+            <hr>
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Nombre</label>
+                <div class="col-sm-9">
+
+                    <input type="text" class="form-control" name="nombre" formControlName="nombre"
+                        placeholder="Nombre del Personaje">
+
+                    <span class="form-text text-danger" *ngIf="campoEsValido('nombre')">
+                        Debe de ser de 3 letras
+                    </span>
+                </div>
+            </div>
+
+            <!-- Campo de descripcion -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Descripcion</label>
+                <div class="col-sm-9">
+
+                    <input type="text" class="form-control" name="descripcion" formControlName="descripcion"
+                        placeholder="Ingresa UNA descripcion">
+
+                    <span class="form-text text-danger" *ngIf="campoEsValido('descripcion')">
+                        Describe el platillo
+                    </span>
+                </div>
+            </div>
+
+            <!-- Campo de fecha -->
+            <div class="mb-3 row">
+                <label class="col-sm-3 col-form-label">Precio</label>
+                <div class="col-sm-9">
+                    <input type="number" class="form-control" name="precio" formControlName="precio">
+                    <span class="form-text text-danger" *ngIf="campoEsValido('precio')">
+                        Ingresa el precio del platillo
+                    </span>
+                </div>
+            </div>
+
+            <div class="pull-right">
+                <button type="button" (click)="eliminar(Formulario.value.id)" class="btn btn-danger mr-2">
+                    <img src="https://cdn.icon-icons.com/icons2/868/PNG/128/trash_bin_icon-icons.com_67981.png" alt="x"
+                        class="icono" />
+                    <i aria-hidden="true" class="fa fa-trash-o"></i>
+                </button>
+                <span _ngcontent-nhr-c33="" class="mr-2">&nbsp;</span>
+                <button type="submit" [disabled]="!Formulario.valid" class="btn btn-success mr-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/69/69539.png" alt="x" class="icono" />
+
+                    <i aria-hidden="true" class="fa fa-floppy-o"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+
+</div>
+
+
+
+
+
+<script src="sweetalert2.all.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">

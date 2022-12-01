@@ -1,0 +1,38 @@
+a{text-decoration: none;
+};
+
+.card{
+    border-radius: 30%;
+    padding-left: 400px;
+}
+.card-img-top{
+    min-width: auto;
+    max-width: 629px;
+    height: 250;
+    position: center;
+ }
+
+.imgPersonaje{
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+.pull-right {
+    float: right !important;
+  }
+
+.row{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card-body{
+    height: 250px;
+    width: 100%;
+}

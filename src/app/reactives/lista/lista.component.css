@@ -1,0 +1,55 @@
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "FoodPacker";
+    color: rgb(226, 100, 10);
+}
+.campos{
+    color: rgb(196, 85, 6);
+    font-size: x-large;
+    text-align: center;
+}
+
+.productos{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fondo{
+    background-color: rgb(240, 217, 186);
+    border-radius: 10px;
+}
+
+.espacios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: FoodPacker; font-weight: 200; font-size: large;
+}
+
+.titulo {
+    font-size: 80px;
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "FoodPacker";
+    color: rgb(201, 89, 10);
+}
+
+button{
+    width: 90px;
+    height: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: rgb(201, 89, 10) ;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+img{
+    width: 5%;
+    margin-bottom: 10px;
+}
+.buscador{
+    border-radius: 30px;
+    border-color: gray;
+}

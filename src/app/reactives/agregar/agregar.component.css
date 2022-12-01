@@ -1,0 +1,28 @@
+.Hombre{
+    background-color: black;
+    
+}
+.Mujer{
+    background-color:  red;
+    
+}
+
+.icono{
+    width: 30px;
+    height: 30px;
+}
+
+.pull-right {
+    float: right !important;
+  }
+
+.card{
+    border-radius: 30%;
+    padding-left: 400px;
+}
+.imgPersonaje{
+    height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
